@@ -1,0 +1,7 @@
+def all_2_digests(enzymes):
+""" generate all possible digests with 2 enzymes """ 
+digests = []
+for i in range(len(enzymes)):
+for k in range(i+1, len(enzymes)):
+digests.append( [enzymes[i], enzymes[k]] )
+return digests
